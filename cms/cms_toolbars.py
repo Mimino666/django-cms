@@ -158,7 +158,7 @@ class BasicToolbar(CMSToolbar):
                                              active=site.pk == self.current_site.pk)
 
             # admin
-            self._admin_menu.add_sideframe_item(_('Administration'), url=admin_reverse('index'))
+            self._admin_menu.add_link_item(_('Administration'), url=admin_reverse('index'))
             self._admin_menu.add_break(ADMINISTRATION_BREAK)
 
             # cms users settings
